@@ -27,4 +27,9 @@ public class UserRepository {
         usuarios.add(new Usuario("Carla", "123456"));
         return usuarios;
     }
+    public Usuario findById(Integer id){
+        //Apenas para ilustrar
+        System.out.println(String.format("FIND/id - Recebendo o id %d para localizar um usuário", id));
+        return new Usuario("mateusp", "123456");
+    }
 }
