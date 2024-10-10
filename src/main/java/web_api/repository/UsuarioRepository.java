@@ -7,8 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Repository
-public class UserRepository {
-    //fake repository
+public class UsuarioRepository {
+    //fake repository - Implementar com SpringBoot Data JPA
     public void save(Usuario usuario){
         if(usuario.getId() == null)
             System.out.println("SAVE - Recebendo o usuário na camada de repositório.");
