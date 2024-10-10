@@ -12,7 +12,7 @@ import java.util.List;
 public class UsuarioController {
     @Autowired
     private UsuarioRepository repository;
-    @GetMapping
+    @GetMapping("/users")
     public List<Usuario> getUsers(){
         return repository.findByAll();
     }
