@@ -23,17 +23,17 @@ public class UsuarioRepository {
     public List<Usuario> findByAll(){
         System.out.println("LIST - Listando os usuários do sistema.");
         List<Usuario> usuarios = new ArrayList<>();
-        usuarios.add(new Usuario("mateusp", "123456"));
-        usuarios.add(new Usuario("Carla", "123456"));
+        usuarios.add(new Usuario("mateus", "123456"));
+        usuarios.add(new Usuario("carla", "123456"));
         return usuarios;
     }
     public Usuario findById(Integer id){
         //Apenas para ilustrar
         System.out.println(String.format("FIND/id - Recebendo o id %d para localizar um usuário", id));
-        return new Usuario("mateusp", "123456");
+        return new Usuario("mateus", "123456");
     }
     public Usuario findByUsername(String usuario){
-        System.out.println(String.format("FIND/username - Recebendo o username %d para localizar um usuário", usuario));
+        System.out.println(String.format("FIND/username - Recebendo o username %s para localizar um usuário", usuario));
         return new Usuario("mateusp", "123456");
     }
 }
