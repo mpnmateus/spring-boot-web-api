@@ -2,16 +2,16 @@ package web_api.model;
 
 import jakarta.persistence.*;
 
-@Entity
-@Table(name = "tab_user")
+//@Entity
+//@Table(name = "tab_user")
 public class Usuario {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "user_id")
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @Column(name = "user_id")
     private Integer id;
-    @Column(length = 50, nullable = false)
+//    @Column(length = 50, nullable = false)
     private String login;
-    @Column(length = 100, nullable = false)
+//    @Column(length = 100, nullable = false)
     private String password;
 
     public Usuario(){}
